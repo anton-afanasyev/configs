@@ -1,0 +1,16 @@
+[user]
+	email = fun@bk.ru
+        name = Anton Afanasyev
+[branch]
+        autosetuprebase = always
+[alias]
+        co = checkout
+        st = status
+        ci = commit
+        br = branch
+[color]
+        ui = auto
+[push]
+        default = upstream
+[core]
+	editor = emacs -nw
