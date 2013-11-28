@@ -26,6 +26,9 @@
 (global-set-key (kbd "C-h") 'delete-backward-char)
 (global-set-key (kbd "M-h") 'backward-kill-word)
 
+;; Query replace
+(global-set-key (kbd "C-q") 'query-replace)
+
 ;; Google style
 (add-hook 'c-mode-common-hook 'google-set-c-style)
 (add-hook 'c-mode-common-hook 'google-make-newline-indent)
