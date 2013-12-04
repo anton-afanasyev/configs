@@ -3,6 +3,8 @@
         name = Anton Afanasyev
 [branch]
         autosetuprebase = always
+[branch "master"]
+        rebase = true
 [alias]
         co = checkout
         st = status
