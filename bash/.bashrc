@@ -9,3 +9,5 @@ export PS1="\n┌${PS1_WDIR}─${PS1_SPCE}─${PS1_USER}\n└─${PS1_TIME}: "
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+
+stty stop ""
