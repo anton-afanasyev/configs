@@ -47,22 +47,23 @@
 
 ;(prefer-coding-system 'koi8-r)
 (prefer-coding-system 'utf-8)
-					;(prefer-coding-system 'cp1251-dos)
+;(prefer-coding-system 'cp1251-dos)
 
-					; (setq process-coding-system-alist '((shell . utf-8))
-					; find-operation-coding-system
+; (setq process-coding-system-alist '((shell . utf-8))
+; find-operation-coding-system
 (setq default-process-coding-system '(utf-8 . utf-8))
 
-					;(set-terminal-coding-system 'utf-8)
+;(set-terminal-coding-system 'utf-8)
 
 
-					;(set-language-environment "Russian")
-					;(define-coding-system-alias 'windows-1251 'cp1251)
-					;(set-buffer-file-coding-system 'cp1251-dos)
-					;(set-default-coding-systems 'cp1251-dos)
-					;(set-terminal-coding-system 'cp1251-dos)
-					;(set-selection-coding-system 'cp1251-dos)
-					;(prefer-coding-system 'cp1251-dos)
+;(set-language-environment "Russian")
+;(define-coding-system-alias 'windows-1251 'cp1251)
+;(set-buffer-file-coding-system 'cp1251-dos)
+;(set-default-coding-systems 'cp1251-dos)
+;(set-terminal-coding-system 'cp1251-dos)
+;(set-selection-coding-system 'cp1251-dos)
+;(prefer-coding-system 'cp1251-dos)
+
 (set-register ?e '(file . "~/.emacs"))
 (set-register ?a '(file . "~"))
 (set-register ?t '(file . "~/todo"))
@@ -72,6 +73,7 @@
 ;; ibuffer and iswitch
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 (iswitchb-mode t)
+(setq iswitchb-buffer-ignore '("^ "))
 
 
 ;; My keybindings
