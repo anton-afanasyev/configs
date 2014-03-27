@@ -18,3 +18,5 @@
 	editor = emacs -nw
 [merge]
 	defaultToUpstream = true
+[status]
+	showUntrackedFiles = no
