@@ -81,6 +81,9 @@
 (global-set-key (kbd "C-S-<tab>") 'other-frame)
 
 
+(column-number-mode)
+
+
 (defun move-to-window-line-begin ()
   (interactive)
   (move-to-window-line 0))
