@@ -30,9 +30,14 @@
 (global-set-key (kbd "C-q") 'query-replace)
 
 ;; Google style
+(add-to-list 'load-path "~/configs/emacs/third-party/coding-style/")
+(require 'google-c-style)
 (add-hook 'c-mode-common-hook 'google-set-c-style)
 (add-hook 'c-mode-common-hook 'google-make-newline-indent)
 
+;; Julia support
+(add-to-list 'load-path "~/configs/emacs/third-party")
+(require 'julia-mode)
 
 ;; Emacs.menuBar:off
 ;; Emacs.toolBar:off
