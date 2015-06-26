@@ -1,0 +1,13 @@
+clear control
+clear mod1
+remove mod4 = Super_L
+
+keycode 0x25 = Alt_L Meta_L
+keycode 0x69 = Alt_R Meta_R
+keycode 0x40 = Control_L
+keycode 0x6c = Control_R
+keycode 133 = Alt_L Meta_L
+keycode 135 = Alt_R Meta_R
+
+add control = Control_L Control_R
+add mod1 = Alt_L Meta_L
