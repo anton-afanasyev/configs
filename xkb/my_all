@@ -1,0 +1,12 @@
+keymap_xkb {
+	xkb_types_keycodes  { include "evdev+aliases(qwerty)"	};
+	xkb_types     { include "complete"	};
+	xkb_compat    { include "complete+ledscroll(group_lock)"	};
+	xkb_geometry  { include "pc(pc105)"	};
+	xkb_symbols   "my" {
+           // include "pc+us+ru:2+inet(evdev)"
+           include "pc+us+ru:2+inet(evdev)+altwin(ctrl_alt_win)+ctrl(rctrl_ralt)+group(shift_caps_switch)"
+
+           
+        };
+};
