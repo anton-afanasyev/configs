@@ -3,12 +3,12 @@
 sudo ln -fs `realpath symbols/my` /usr/share/X11/xkb/symbols/my
 #ln -fs `realpath .` ~/.config/xkb
 
-# Also, one should manually add "my:my = +my(my)" to "! option = symbols" section
+# Also, one should manually add "my:main = +my(main)" to "! option = symbols" section
 # in `/usr/share/X11/xkb/rules/evdev` file (as well as description to `/usr/share/X11/xkb/rules/evdev.lst`)
 
 
 # gsettings get org.gnome.desktop.input-sources xkb-options
-gsettings set org.gnome.desktop.input-sources xkb-options "['my:my']"
+gsettings set org.gnome.desktop.input-sources xkb-options "['my:main']"
 
 sudo rm -rf /var/lib/xkb/*.xkm
 

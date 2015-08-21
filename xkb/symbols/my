@@ -1,4 +1,10 @@
 partial modifier_keys
-xkb_symbols "my" {
+xkb_symbols "lctrl_lalt" {
+    key <LCTL>	{ symbols[Group1]= [ Alt_L ] };
+};
+
+partial modifier_keys
+xkb_symbols "main" {
     include "pc+us+ru:2+inet(evdev)+altwin(ctrl_alt_win)+ctrl(rctrl_ralt)+group(shift_caps_switch)"
+    include "my(lctrl_lalt)"
 };
