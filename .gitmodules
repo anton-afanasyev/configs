@@ -1,0 +1,3 @@
+[submodule "emacs/third-party/jade-mode"]
+	path = emacs/third-party/jade-mode
+	url = git@github.com:brianc/jade-mode.git
