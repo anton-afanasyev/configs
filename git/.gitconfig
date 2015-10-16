@@ -10,6 +10,7 @@
         st = status
         ci = commit
         br = branch
+        clone = 'clone --recursive'
 [color]
         ui = auto
 [push]
