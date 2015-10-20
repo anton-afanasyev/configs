@@ -40,10 +40,10 @@
 (require 'julia-mode)
 
 ;; jade mode support
-(add-to-list 'load-path "~/configs/emacs/third-party/jade-mode")
-(require 'sws-mode)
-(require 'jade-mode)
-(add-to-list 'auto-mode-alist '("\\.styl\\'" . sws-mode))
+;;(add-to-list 'load-path "~/configs/emacs/third-party/jade-mode")
+;;(require 'sws-mode)
+;;(require 'jade-mode)
+;;(add-to-list 'auto-mode-alist '("\\.styl\\'" . sws-mode))
 
 ;; Emacs.menuBar:off
 ;; Emacs.toolBar:off
