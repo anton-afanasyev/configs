@@ -13,4 +13,7 @@ alias la='ls -A'
 alias l='ls -CF'
 alias em='emacs -nw'
 
-stty stop ""
+if [ -t 1 ]; then # fd 1 is tty
+    stty stop ""
+fi
+
