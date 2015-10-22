@@ -11,5 +11,6 @@ export PS1="${PS1_TIME}─${PS1_WDIR}${PS1_SIGN} "
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias em='emacs -nw'
 
 stty stop ""
