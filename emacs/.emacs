@@ -39,6 +39,13 @@
 (add-to-list 'load-path "~/configs/emacs/third-party")
 (require 'julia-mode)
 
+;; go-mode support
+;; (run "M-x package-list-packages" and "M-x package-install", "go-mode")
+;; (taken from here: http://tleyden.github.io/blog/2014/05/22/configure-emacs-as-a-go-editor-from-scratch/)
+(require 'package)
+(add-to-list 'package-archives
+  '("melpa" . "http://melpa.milkbox.net/packages/") t)
+
 ;; jade mode support
 ;;(add-to-list 'load-path "~/configs/emacs/third-party/jade-mode")
 ;;(require 'sws-mode)
