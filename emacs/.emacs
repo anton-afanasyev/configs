@@ -46,6 +46,10 @@
 (add-to-list 'package-archives
   '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
+(setq gofmt-command "goimports")
+(add-hook 'before-save-hook #'gofmt-before-save)
+;;(remove-hook 'before-save-hook #'gofmt-before-save)
+
 ;; jade mode support
 ;;(add-to-list 'load-path "~/configs/emacs/third-party/jade-mode")
 ;;(require 'sws-mode)
