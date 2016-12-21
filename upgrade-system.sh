@@ -3,7 +3,7 @@
 # apt packages 
 sudo apt upgrade
 sudo apt update
-sudo apt install g++ tmux emacs git python python-pip python-virtualenv
+sudo apt install g++ tmux emacs git python python-pip python-virtualenv tig
 
 # Go install
 wget 'https://storage.googleapis.com/golang/go1.7.4.linux-amd64.tar.gz'
