@@ -51,6 +51,7 @@
 (add-hook 'before-save-hook #'gofmt-before-save)
 ;;(remove-hook 'before-save-hook #'gofmt-before-save)
 
+;; go get -u github.com/golang/lint
 (add-to-list 'load-path (concat (getenv "GOPATH")  "/src/github.com/golang/lint/misc/emacs"))
 (require 'golint)
 
