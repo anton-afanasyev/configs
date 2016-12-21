@@ -12,6 +12,7 @@
 ;; ))
 
 
+
 ;; my favourite scrolling
 (setq scroll-conservatively 50)
 (setq scroll-preserve-screen-position 't)
@@ -49,6 +50,9 @@
 (setq gofmt-command "goimports")
 (add-hook 'before-save-hook #'gofmt-before-save)
 ;;(remove-hook 'before-save-hook #'gofmt-before-save)
+
+(add-to-list 'load-path (concat (getenv "GOPATH")  "/src/github.com/golang/lint/misc/emacs"))
+(require 'golint)
 
 ;; jade mode support
 ;;(add-to-list 'load-path "~/configs/emacs/third-party/jade-mode")
