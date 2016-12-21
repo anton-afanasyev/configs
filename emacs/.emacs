@@ -47,6 +47,7 @@
 (add-to-list 'package-archives
   '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
+;; go get -u golang.org/x/tools/cmd/goimports
 (setq gofmt-command "goimports")
 (add-hook 'before-save-hook #'gofmt-before-save)
 ;;(remove-hook 'before-save-hook #'gofmt-before-save)
