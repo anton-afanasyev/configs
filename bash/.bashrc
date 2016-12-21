@@ -12,6 +12,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias em='emacs -nw'
+alias gst='git st'
 
 if [ -t 1 ]; then # fd 1 is tty
     stty stop ""
