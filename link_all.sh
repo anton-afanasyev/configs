@@ -15,3 +15,4 @@ link_but_backup()
 link_but_backup ~/configs/emacs/.emacs ~/.emacs
 link_but_backup ~/configs/tmux/.tmux.conf ~/.tmux.conf
 link_but_backup ~/configs/git/.gitconfig ~/.gitconfig
+link_but_backup ~/configs/fish/config.fish ~/.config/fish/config.fish

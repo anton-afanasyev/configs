@@ -15,3 +15,9 @@ sudo apt-get install -y nodejs
 
 # Docker install
 # https://docs.docker.com/engine/installation/linux/ubuntulinux/
+
+# Change default shell to fish
+sudo apt-add-repository ppa:fish-shell/release-2
+sudo apt-get update
+sudo apt-get install fish
+sudo chsh -s /usr/bin/fish
