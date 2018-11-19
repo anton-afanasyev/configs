@@ -51,3 +51,24 @@ function fish_prompt --description 'Write out the prompt'
 
     echo -n -s '[' (set_color $color_cwd) (prompt_pwd) (set_color normal) "] $suffix "
 end
+
+function fish_right_prompt -d "Write out the right prompt"
+  set -l exit_code $status
+
+  set_color black
+
+  # Print a red dot for failed commands.
+  if test $exit_code -ne 0
+    set_color red
+    echo -n "• "
+    set_color black
+  end
+
+  # Show duration of the last command in seconds it took more than 1 sec
+  if test $CMD_DURATION -a $CMD_DURATION -ge 1000
+    set duration (echo "$CMD_DURATION 1000" | awk '{printf "%.3fs", $1 / $2}')
+    echo $duration
+  end
+
+  set_color normal
+end
