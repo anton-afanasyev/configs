@@ -28,6 +28,10 @@ function gst --description 'git status'
          git st
 end
 
+function gdiff --description 'git diff'
+         git diff $argv
+end
+
 function fish_prompt --description 'Write out the prompt'
     # Just calculate this once, to save a few cycles when displaying the prompt
     if not set -q __fish_prompt_hostname
