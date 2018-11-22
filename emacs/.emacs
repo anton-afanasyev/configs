@@ -102,12 +102,9 @@
 (set-register ?t '(file . "~/todo"))
 
 
-
-;; ibuffer and iswitch
-(global-set-key (kbd "C-x C-b") 'ibuffer)
-(iswitchb-mode t)
-(setq iswitchb-buffer-ignore '("^ "))
-
+;; Mode for buffers switching
+(ido-mode t)
+(icomplete-mode t)
 
 ;; My keybindings
 (global-set-key (kbd "C-<tab>") 'other-window)
