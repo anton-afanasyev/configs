@@ -17,9 +17,17 @@
 (setq scroll-conservatively 50)
 (setq scroll-preserve-screen-position 't)
 
-
-;; No tabs
+;; Default is no tabs, indent by two spaces
 (setq-default indent-tabs-mode nil)
+(setq-default c-basic-offset 2)
+
+;; Detect source indentation. To install dtrt-indent package run
+;; "M-x package-list-packages" and "M-x package-install", "dtrt-indent"
+(require 'package)
+(add-to-list 'package-archives
+  '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(autoload 'dtrt-indent-mode "dtrt-indent" "Adapt to foreign indentation offsets" t)
+(add-hook 'c-mode-common-hook 'dtrt-indent-mode)
 
 ;; Ctrl-h for delete-backward-char
 (global-set-key (kbd "C-x h") 'help-command)
@@ -43,9 +51,6 @@
 ;; go-mode support
 ;; (run "M-x package-list-packages" and "M-x package-install", "go-mode")
 ;; (taken from here: http://tleyden.github.io/blog/2014/05/22/configure-emacs-as-a-go-editor-from-scratch/)
-(require 'package)
-(add-to-list 'package-archives
-  '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
 ;; go get -u golang.org/x/tools/cmd/goimports
 (setq gofmt-command "goimports")
@@ -273,5 +278,3 @@ named after the string \"*shell*\" using `generate-new-buffer-name'."
 ;; key bindings for find-file-at-point family
 ;; instead of standard ones
 (ffap-bindings)
-
-
