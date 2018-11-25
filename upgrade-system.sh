@@ -3,7 +3,8 @@
 # apt packages 
 sudo apt upgrade
 sudo apt update
-sudo apt install g++ tmux emacs git python python-pip python-virtualenv tig mosh
+sudo apt install g++ tmux emacs git python python-pip python-virtualenv \
+     tig mosh dconf-cli
 
 # Go install
 wget 'https://storage.googleapis.com/golang/go1.7.4.linux-amd64.tar.gz'
@@ -21,3 +22,6 @@ sudo apt-add-repository ppa:fish-shell/release-2
 sudo apt-get update
 sudo apt-get install fish
 sudo chsh -s /usr/bin/fish
+
+# Disable annoying HUD triggered by Alt key
+dconf write /org/compiz/integrated/show-hud '[""]'
