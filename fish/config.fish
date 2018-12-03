@@ -18,6 +18,9 @@ set -x PATH $PATH $GOPATH/bin
 # fd 1 is tty
 [ -t 1 ]; and stty stop ""
 
+function ll --description 'ls almost all'
+	ls -AFGl $argv
+end
 
 function em --description 'Emacs no X'
 	emacs -nw $argv
