@@ -268,10 +268,12 @@ named after the string \"*shell*\" using `generate-new-buffer-name'."
   '(add-to-list 'dired-compress-file-suffixes
 		'("\\.zip\\'" ".zip" "unzip")))
 
-
-
-
-
 ;; key bindings for find-file-at-point family
 ;; instead of standard ones
 (ffap-bindings)
+
+;; "M-x package-install", "clang-format"
+(add-hook 'c-mode-common-hook
+          (function (lambda ()
+                    (add-hook 'before-save-hook
+                              'clang-format-buffer))))
