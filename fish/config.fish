@@ -1,13 +1,13 @@
 # [ -n "$SSH_AUTH_SOCK" ] && ln -fs $SSH_AUTH_SOCK ~/.ssh/ssh_auth_sock 
-set -x NPM_PACKAGES "$HOME/.npm-packages"
-set -x PATH $NPM_PACKAGES/bin $PATH
-#set -gx MANPATH (manpath -q | tr ":" " ")
-#set -gx MANPATH $NPM_PACKAGES/share/man $MANPATH
-set -x NODE_PATH $NPM_PACKAGES/lib/node_modules $NODE_PATH
+#set -x NPM_PACKAGES "$HOME/.npm-packages"
+#set -x PATH $NPM_PACKAGES/bin $PATH
+# set -e MANPATH  # delete if you already modified MANPATH elsewhere in your configuration
+#set -x MANPATH $NPM_PACKAGES/share/man $MANPATH
+#set -x NODE_PATH $NPM_PACKAGES/lib/node_modules $NODE_PATH
 
-set -x PATH $PATH /usr/local/go/bin
-set -x GOPATH $HOME/go
-set -x PATH $PATH $GOPATH/bin
+#set -x PATH $PATH /usr/local/go/bin
+#set -x GOPATH $HOME/go
+#set -x PATH $PATH $GOPATH/bin
 
 # TODO: make tmux/aux.fish
 #DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"

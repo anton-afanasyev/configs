@@ -53,13 +53,13 @@
 ;; (taken from here: http://tleyden.github.io/blog/2014/05/22/configure-emacs-as-a-go-editor-from-scratch/)
 
 ;; go get -u golang.org/x/tools/cmd/goimports
-(setq gofmt-command "goimports")
-(add-hook 'before-save-hook #'gofmt-before-save)
+;(setq gofmt-command "goimports")
+;(add-hook 'before-save-hook #'gofmt-before-save)
 ;;(remove-hook 'before-save-hook #'gofmt-before-save)
 
 ;; go get -u github.com/golang/lint
-(add-to-list 'load-path (concat (getenv "GOPATH")  "/src/github.com/golang/lint/misc/emacs"))
-(require 'golint)
+;(add-to-list 'load-path (concat (getenv "GOPATH")  "/src/github.com/golang/lint/misc/emacs"))
+;(require 'golint)
 
 ;; jade mode support
 ;;(add-to-list 'load-path "~/configs/emacs/third-party/jade-mode")
@@ -273,7 +273,7 @@ named after the string \"*shell*\" using `generate-new-buffer-name'."
 (ffap-bindings)
 
 ;; "M-x package-install", "clang-format"
-(add-hook 'c-mode-common-hook
-          (function (lambda ()
-                    (add-hook 'before-save-hook
-                              'clang-format-buffer))))
+;;(add-hook 'c-mode-common-hook
+;;          (function (lambda ()
+;;                    (add-hook 'before-save-hook
+;;                              'clang-format-buffer))))
