@@ -1,9 +1,9 @@
 # [ -n "$SSH_AUTH_SOCK" ] && ln -fs $SSH_AUTH_SOCK ~/.ssh/ssh_auth_sock 
-export NPM_PACKAGES="$HOME/.npm-packages"
-export PATH="$NPM_PACKAGES/bin:$PATH"
-unset MANPATH  # delete if you already modified MANPATH elsewhere in your configuration
-export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
-export NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
+#export NPM_PACKAGES="$HOME/.npm-packages"
+#export PATH="$NPM_PACKAGES/bin:$PATH"
+#unset MANPATH  # delete if you already modified MANPATH elsewhere in your configuration
+#export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
+#export NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
 
 export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$HOME/go
