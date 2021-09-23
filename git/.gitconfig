@@ -7,11 +7,17 @@
         rebase = true
 [alias]
         co = checkout
+        ck = checkout
         st = status
         ci = commit
+        cm = commit
         br = branch
         clone = 'clone --recursive'
-        st = status
+        cam = commit --amend
+        caa = commit --amend -a
+        ro = restore
+        rb = rebase
+        rbc = rebase --continue
 [color]
         ui = auto
 [push]
@@ -20,8 +26,9 @@
 	editor = emacs -nw
 [merge]
 	defaultToUpstream = true
+        renamelimit = 3000
 [status]
-	showUntrackedFiles = no
+	;showUntrackedFiles = no
 [url "git@github.com:"]
 	pushInsteadOf = https://github.com/
 	insteadOf = https://github.com/
