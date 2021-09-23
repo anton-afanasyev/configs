@@ -8,6 +8,7 @@
 #set -x PATH $PATH /usr/local/go/bin
 #set -x GOPATH $HOME/go
 #set -x PATH $PATH $GOPATH/bin
+set -x EDITOR "emacs -nw"
 
 # TODO: make tmux/aux.fish
 #DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
