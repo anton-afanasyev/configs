@@ -14,6 +14,13 @@
 
 
 ;; my favourite scrolling
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (setq scroll-conservatively 50)
 (setq scroll-preserve-screen-position 't)
 
@@ -277,3 +284,10 @@ named after the string \"*shell*\" using `generate-new-buffer-name'."
 ;;          (function (lambda ()
 ;;                    (add-hook 'before-save-hook
 ;;                              'clang-format-buffer))))
+
+
+;; LLVM stuff
+(setq load-path
+      (cons (expand-file-name "/home/aaa-sc/llvm/llvm-project/llvm/utils/emacs") load-path))
+(require 'llvm-mode)
+(require 'tablegen-mode)
